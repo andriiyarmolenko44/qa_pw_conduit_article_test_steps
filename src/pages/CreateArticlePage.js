@@ -9,7 +9,8 @@ export class CreateArticlePage {
     this.errorMessage = page.getByRole('list').nth(1);
     this.titleField = page.getByPlaceholder('Article Title');
     this.aboutField = page.getByPlaceholder('What\'s this article about?');
-    this.articleField = page.getByPlaceholder('Write your article (in');
+    this.articleField = page.getByPlaceholder(
+      'Write your article (in markdown)');
     this.tagsField = page.getByPlaceholder('Enter tags');
     this.createdArticleTitle = page.locator('div h1');
   }
